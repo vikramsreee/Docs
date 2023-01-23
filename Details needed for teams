@@ -1,2 +1,7 @@
 Deployment
 1) Even if there is no dependency, capacity of deployment env should be considered when doing parallel deployment. Load on environment will cause deployment time to increase and possibility of validation failures because of high deployment time
+
+Prod Testing
+---------------
+1) Environment details, access to application and nodes shoould be there to check functional flows and logs
+2) Users and other setting need to be setup
