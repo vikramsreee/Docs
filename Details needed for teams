@@ -1,0 +1,2 @@
+Deployment
+1) Even if there is no dependency, capacity of deployment env should be considered when doing parallel deployment. Load on environment will cause deployment time to increase and possibility of validation failures because of high deployment time
