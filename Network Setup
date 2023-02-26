@@ -5,3 +5,15 @@ ssh -D 33333 -J testuser@[FirstJumphostNodeIP]  testuser@[SecondJumpHostNodeIP]
 
 Local Port forwarding
 ssh -L 443:[RemoteServerIP]:443 -J testuser@[FirstJumphostNodeIP]  testuser@[SecondJumpHostNodeIP]
+
+
+Disable firewall
+-------------------------
+sudo systemctl status firewalld
+sudo systemctl stop firewalld
+sudo systemctl disable firewalld
+sudo systemctl status firewalld
+
+Take tcpdump
+------------------------------
+sudo tcpdump -i networkInterfaceName port 5555 -w trace_$(hostname)_$(date-u +%Y-%m-%d-%H-%M-%S).pcap
