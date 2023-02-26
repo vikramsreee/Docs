@@ -1,0 +1,7 @@
+Tool: MobaXtern
+-------------------------------
+1) Setup 2 jumphost
+ssh -D 33333 -J testuser@[FirstJumphostNodeIP]  testuser@[SecondJumpHostNodeIP]
+
+Local Port forwarding
+ssh -L 443:[RemoteServerIP]:443 -J testuser@[FirstJumphostNodeIP]  testuser@[SecondJumpHostNodeIP]
